@@ -1,4 +1,4 @@
-# ikea-challenge
+# IKEA Challenge
 
 
 ## Task 1: IKEA script
