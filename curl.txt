@@ -1,0 +1,22 @@
+curl --request POST \
+     --url https://api.exponea.com/track/v2/projects/12345678-1234-1234-1234-123456789abc/customers/events \
+     --header 'accept: application/json' \
+     --header 'authorization: Token <API Token>' \
+     --header 'content-type: application/json' \
+     --data '
+{
+  "customer_ids": {
+    "registered": "marian@exponea.com"
+  },
+  "properties": {
+    "Item_id": "36642745f936ea48b93a3288ee64b35f",
+    "Item_name": "Ankh Morpork board game",
+    "Price": 1234.50,
+    "Quantity": 1,
+    "Purchase_id": "3f50e1ac550c5437e9b0dd6ba255a4b7",
+    "Item_on_sale": true
+  },
+  "timestamp": 1614941503,
+  "event_type": "purchase_item"
+}
+'
